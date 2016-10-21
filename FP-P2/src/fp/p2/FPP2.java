@@ -16,7 +16,7 @@ public class FPP2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // DECLARACION DE VARIABLES
         double b = 0,c = 0,d = 0;
         int a;
         a=Datos();
@@ -25,7 +25,7 @@ public class FPP2 {
         
     }
     
-    public static int Datos() {
+    public static int Datos() {// METODO PARA PEDIR MEDIDA EN METROS
         int a;
         Scanner Teclado=new Scanner(System.in);
         System.out.println("Introduce medida en Metros");
@@ -34,7 +34,7 @@ public class FPP2 {
         return a;
             
     }
-    public static void Calcular(int a,double b ,double c,double d){
+    public static void Calcular(int a,double b ,double c,double d){// METODO PARA CTRANSFORMAR DE METROS A YARDAS PIES Y MILLAS
         final double yrd = 1.09361; 
         final double ft = 3.28084;
         final double mil = 0.000621371;
@@ -45,7 +45,7 @@ public class FPP2 {
         
         
         System.out.println(a+ " es igual a " + b + " Yardas");
-         System.out.println(a+ " es igual a " + c + " Pies");
+         System.out.println(a+ " es igual a " + c + " Pies");//IMPRIMIR
           System.out.println(a+ " es igual a " + d + " Millas");
    
         
